@@ -1,0 +1,22 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+      <!-- Blog Entries Column -->
+      <div class="col-md-8">
+        {% comment %} <div class="card mb-4">
+          <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap"> {% endcomment %}
+          <div class="card-header">
+            Please login
+          </div>
+        <div class="card-body">
+             <form method ="POST">
+             {% csrf_token %}
+             {{form.as_p}}
+             <button type="submit" class ="btn btn-primary"> Login</button>
+             <h5> Register to add your story .?.<a href="{% url 'register' %}"> click here.</a></h5>
+             </form>
+          </div>
+        </div>
+      </div>
+
+{% endblock %}

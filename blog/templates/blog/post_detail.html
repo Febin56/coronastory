@@ -1,0 +1,28 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+      <!-- Blog Entries Column -->
+      <div class="col-md-8 mt-4">
+
+        <a href="{% url 'bloghome' %}" > Back to Home</a>
+
+        <!-- Blog Post -->
+        <div class="card mb-4">
+          {% if post.picture %}
+          <img class="card-img-top" src="{{post.picture.url}}" alt="Card image cap">
+          {% endif %}
+          <div id="like-section">
+          {% include 'blog/like_section.html' %}
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">{{object.title}}</h3>
+            <p class="card-text">{{object.text|linebreaks}}</p>
+          </div>
+          <div class="card-footer text-muted">
+            Posted on {{object.date}} by
+            <a href="#">{{object.author}}</a>
+          </div>
+        </div>
+      </div>
+
+{% endblock %}
