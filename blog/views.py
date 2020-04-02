@@ -6,9 +6,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import RedirectView
 from django.shortcuts import get_list_or_404, get_object_or_404
 from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
-from rest_framework.response import Response
 from django.template.loader import render_to_string
-from rest_framework import authentication, permissions
 from .models import Post
 
 # Create your views here.
