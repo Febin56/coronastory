@@ -35,8 +35,6 @@ class CreatePostView(LoginRequiredMixin, CreateView):
 def like_post(request):
     # post = get_object_or_404(Post, id=request.POST.get('post_id'))
     post = get_object_or_404(Post, id=request.POST.get('id'))
-    print(post)
-    print(post)
     is_liked = False
     if post.likes.filter(id=request.user.id).exists():
         post.likes.remove(request.user)
