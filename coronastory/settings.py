@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'aishublog.urls'
+ROOT_URLCONF = 'coronastory.urls'
 
 TEMPLATES = [
     {
@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'aishublog.wsgi.application'
+WSGI_APPLICATION = 'coronastory.wsgi.application'
 
 
 # Database
