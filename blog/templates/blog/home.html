@@ -15,7 +15,7 @@
             <br><h3 class="card-title">{{post.title}}</h3>
             <p class="card-text">{{post.text|truncatechars:100}}</p>
             <p> <b>{{ post.total_likes }} Like{{ post.total_likes|pluralize }}</b> </p>
-            <a href="{% url 'blogdetail' post.pk %}" class="btn btn-primary">Read Full Story&rarr;</a>
+            <a href="{% url 'blogdetail' post.pk %}" class="btn btn-primary">Read Full Story &rarr;</a>
           </div>
           <div class="card-footer text-muted">
             Posted on {{post.date}} by

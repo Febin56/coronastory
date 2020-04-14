@@ -11,12 +11,12 @@ from .models import Post
 
 # Create your views here.
 
-class HomeView(LoginRequiredMixin, ListView):
+class HomeView(ListView):
     model = Post
     template_name = 'blog/index.html'
     context_object_name = "blog_posts"
     ordering =['-date']
-    paginate_by = 2
+    paginate_by = 6
 
 class PostView(LoginRequiredMixin, DetailView):
     model = Post
