@@ -1,1 +1,1 @@
-web: gunicorn aishublog.wsgi
+web: gunicorn coronastory.wsgi
