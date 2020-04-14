@@ -25,7 +25,7 @@ SECRET_KEY = '@a6ju)39pv$y=1$=i^4xt#p4u=745cla$2l00if%^ioc%n37rl'
 #SECRET_KEY = os.environ.get('BLOG_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
