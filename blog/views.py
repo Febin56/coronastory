@@ -18,6 +18,11 @@ class HomeView(ListView):
     ordering =['-date']
     paginate_by = 6
 
+class AboutView(ListView):
+    model = Post
+    template_name = 'blog/about.html'
+
+
 class PostView(LoginRequiredMixin, DetailView):
     model = Post
     template_name = 'blog/post_detail.html'
