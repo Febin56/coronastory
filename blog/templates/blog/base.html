@@ -28,7 +28,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="{% url 'bloghome' %}"><img src="https://img.icons8.com/nolan/64/coronavirus.png"/><b>&nbsp Survival Stories</b></a>
+      <a class="navbar-brand" href="{% url 'bloghome' %}"><img src="https://img.icons8.com/nolan/32/coronavirus.png"><b>&nbsp Survival Stories</b></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -67,13 +67,15 @@
   <div class="container">
 
     <div class="row">
-
+    
        {% block content %} {% endblock %}
 
     </div>
 
+  </div>
+
         <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="py-10 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white"> Made with <span class="heart">❤</span> Febin Kallungal Paul</p>
     </div>
