@@ -34,17 +34,6 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          {% comment %} <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li> {% endcomment %}
-          {% comment %} <li class="nav-item">
-            <a class="navbar-brand" href="{% url 'register' %}"><b>Click here to register and Read Stories</b></a>
-          </li> {% endcomment %}
-
-          {% comment %} <a class="navbar-brand" href="{% url 'register' %}"><i><b><u>Sign up for Full Story</u></b></i></a> {% endcomment %}
-
           <li class="nav-item">
             <a class="nav-link" href="{% url 'createpost' %}"><b>Submit Story</b></a>
           </li>
@@ -52,13 +41,7 @@
           <li class="nav-item">
             <a class="nav-link" href="{% url 'about' %}"><b>About</b></a>
           </li>
-         {% comment %} <li class="nav-item">
-            <a class="navbar-brand" href="{% url 'login' %}"><b>LOGOUT</b></a>
-          </li>  {% endcomment %}
-          {% comment %} <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li> {% endcomment %}
-        </ul>
+          </ul>
       </div>
     </div>
   </nav>
