@@ -9,8 +9,13 @@
         <div class="card-body">
              <form method ="POST" enctype="multipart/form-data">
              {% csrf_token %}
-             {{form.as_p}}
-             <button type="submit" class ="btn btn-primary"> Submit</button>
+            <label for="id_title"><b>Title&nbsp&nbsp</b></label>
+            {{form.title}}
+             <div class="card mb-4">
+             <p class="m-0 text-center">Add your story below</p>
+             {{form.text}}
+             </div>
+             <button type="submit" class ="btn btn-primary" style="float: right;"> Submit</button>
              </form>
           </div>
         </div>
